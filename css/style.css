@@ -8,13 +8,14 @@
 /*Variabili*/
 :root {
     --color-white: #ffffff;
-    --color-bg-color: #d9d9d9;
+    --color-bg-color: #f5f4f2;
     --color-primary: #7c69a4;
     --color-dark-text: #4e3969;
     --color-black: #282529;
     --color-contrast: #fa961a;
     --color-icon-red: #ea5556;
     --color-icon-blue: #2871f0;
+    --color-d-and-d: #9e9c99;
 }
 
 /*Debug*/
@@ -29,17 +30,50 @@
     font-weight: 400;
     font-style: normal;
   }
+.font-size-small{
+    font-size: small;
+}
+.font-size-larger{
+    font-weight: 700;
+    font-size: larger;
+}
+
+/*id*/
+img{
+    width: 100%;
+}
   
 /*Selectors*/
 h1{
     color: var(--color-contrast);
     font-family: "Nerko One", cursive;
-    font-size: 4.5em;
+    font-size: 2.5em;
     text-transform: uppercase;
     text-shadow: 2px 1px 1px grey;
     
 }
+main,footer{
+    font-family: Montserrat, 'Helvetica Neue', sans-serif;
+}
+main{
+    background-color: var(--color-bg-color);
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    font-size: smaller;
+}
+
+
 /*Containers*/
+.container-main{
+    max-width: 1200px;
+    margin-inline:auto;
+    padding-inline: 20px;
+}
 
 /*Utilities:*/
 /*Flex Utilities*/
@@ -48,4 +82,35 @@ h1{
 }
 .j-c-center{
     justify-content: center;
+}
+.f-dir-column{
+    flex-direction: column;
+}
+
+/*Borders, Margins, Paddings and Gaps*/
+.padding-40px-20px{
+    padding: 40px 20px;
+}
+.padding-top-20px{
+    padding-top: 20px;
+}
+.padding-bottom-20px{
+    padding-bottom: 20px;
+}
+.gap-20px{
+    gap: 20px;
+}
+.p-top-bot-10px{
+    padding:10px 0;
+}
+
+/*Others*/
+.d-and-d{
+    color: var(--color-d-and-d);
+}
+.tiramisu{
+    color: var(--color-dark-text);
+}
+.bg-white{
+    background-color: white;
 }
