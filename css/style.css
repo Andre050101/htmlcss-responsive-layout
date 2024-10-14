@@ -43,12 +43,13 @@
 /*id*/
 #icons div div{
     background-color: white;
-    padding: 12px 17px;
-    border-radius: 47%;
+    padding: 2% 6%;
+    border-radius: 45%;
 }
 
 #tiramisu img{
     width: 70%;
+    float:none;
 
 }
 #video img{
@@ -57,6 +58,7 @@
 #footer li{
     text-decoration: underline;
 }
+#banner img{width:100%}
   
 /*Selectors*/
 h1{
@@ -188,4 +190,39 @@ h2{
 .tiramisu-description{
     line-height: 160%;
     font-size: 0.8em;
+}
+.header{
+    display: flex;
+    justify-content: center;
+}
+.dolce-tradizionale{
+    display: none;
+}
+.list-descr{
+    display:flex;
+    flex-direction: column;
+}
+.display-banner{
+    display: none;
+}
+.float-image{
+    float: left;
+}
+/*Media Queries*/
+@media screen and (min-width:768px){
+    .header{
+        justify-content: flex-start;
+    }
+    .dolce-tradizionale{
+        display: inline;
+    }
+    .list-descr{
+        flex-direction: row;
+        justify-content:space-between;
+        flex-wrap: wrap;
+    }
+    .display-banner{
+        padding-top:15px;
+        display: block;
+    }
 }
