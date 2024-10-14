@@ -21,6 +21,31 @@
 .debug{
     border: 1px solid red;
 }
+
+/*Font*/
+/*Nerko One*/
+.nerko-one-regular {
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+/*Selectors*/
+h1{
+    color: var(--color-contrast);
+    font-family: "Nerko One", cursive;
+    font-size: 4.5em;
+    text-transform: uppercase;
+    text-shadow: 2px 1px 1px grey;
+    
+}
 /*Containers*/
 
 /*Utilities:*/
+/*Flex Utilities*/
+.d-flex{
+    display: flex;
+}
+.j-c-center{
+    justify-content: center;
+}
