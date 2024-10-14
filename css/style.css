@@ -16,6 +16,8 @@
     --color-icon-red: #ea5556;
     --color-icon-blue: #2871f0;
     --color-d-and-d: #9e9c99;
+    --color-icon-pink:#de3a8c;
+    --color-icon-light-blue:#009dff;
 }
 
 /*Debug*/
@@ -39,9 +41,12 @@
 }
 
 /*id*/
-img{
-    width: 100%;
+#icons div div{
+    background-color: white;
+    padding: 12px 17px;
+    border-radius: 47%;
 }
+
   
 /*Selectors*/
 h1{
@@ -66,7 +71,9 @@ ul{
 li{
     font-size: smaller;
 }
-
+img{
+    width: 100%;
+}
 
 /*Containers*/
 .container-main{
@@ -82,6 +89,9 @@ li{
 }
 .j-c-center{
     justify-content: center;
+}
+.j-c-space-between{
+    justify-content: space-between;
 }
 .f-dir-column{
     flex-direction: column;
@@ -103,6 +113,9 @@ li{
 .p-top-bot-10px{
     padding:10px 0;
 }
+.p-top-bot-30px{
+    padding:30px 0;
+}
 
 /*Others*/
 .d-and-d{
@@ -113,4 +126,16 @@ li{
 }
 .bg-white{
     background-color: white;
+}
+.blue-fb{
+    color: var(--color-icon-blue);
+}
+.pink-ig{
+    color:var(--color-icon-pink);
+}
+.blue-twitter{
+    color:var(--color-icon-light-blue);
+}
+.red-pr-yt{
+    color:var(--color-icon-red);
 }
